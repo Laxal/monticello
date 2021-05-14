@@ -1,0 +1,12 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 10px 0;
+    background: transparent;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
