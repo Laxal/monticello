@@ -1,18 +1,17 @@
 .section1 {
-    max-height: 800px;
-    height: 100vh;
+    &-slider {
+        &__slide1 {
+            background-image: url(/assets/img/section1-slide1.jpg);
+        }
 
-    & .slide {
-        background-image: url(/assets/img/section1-slide1.jpg);
-    }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-    & .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        max-height: 800px;
-        height: 100vh;
+            max-height: 800px;
+            height: 100vh;
+        }
     }
 }

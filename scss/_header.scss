@@ -4,9 +4,114 @@
     top: 0px;
     padding: 10px 0;
     background: transparent;
+    transform: translateY(20%);
 
     &-container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        flex: 3;
+    }
+
+    &__nav {
+        flex: 7;
+
+        .menu {
+            width: 100%;
+            display: flex;
+
+            &__item {
+                position: relative;
+                margin: 0 0 0 60px;
+                padding: 0 0 0 25px;
+                white-space: nowrap;
+                font-weight: 900;
+
+                &:first-child {
+                    margin: 0 0 0 35px;
+                }
+
+                &:last-child {
+                    margin: 0 0 0 90px;
+                }
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 9px;
+                    height: 9px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    transition: all 0.3s ease;
+
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    &::before {
+                        background-color: #fff;
+                    }
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &__social {
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
+
+        &-link {
+            display: block;
+            color: #fff;
+            border: 1px solid rgba($color: #fff, $alpha: 0.5);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 0 0 20px;
+            transition: all 0.3s ease;
+        }
+
+        .fb {
+            &:hover,
+            &:active,
+            &:focus {
+                color: #4267b2;
+            }
+        }
+
+        .tw {
+            &:hover,
+            &:active,
+            &:focus {
+                color: #1da1f2;
+            }
+        }
+
+        .inst {
+            &:hover,
+            &:active,
+            &:focus {
+                color: #c13584;
+            }
+        }
     }
 }
