@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 @font-face {
   font-family: "Gotham";
   src: url("/assets/fonts/gotham-medium-webfont.woff2"), url("/assets/fonts/gotham-medium-webfont.woff"), url("/assets/fonts/gotham-medium-regular.ttf");
@@ -850,18 +850,30 @@ body {
   margin: 0 0 100px 0;
 }
 
-.section2-project__accent-back_blue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.section2-project {
+  position: relative;
+}
+
+.section2-project:not(:last-child) {
+  margin-bottom: 140px;
+}
+
+.section2-project__accent-back {
   width: 36.5625%;
   height: 470px;
-  background-color: #55b7ff;
   position: absolute;
+  top: 0;
   z-index: -1;
+}
+
+.section2-project__accent-back_blue {
+  background-color: #55b7ff;
+  left: 0;
+}
+
+.section2-project__accent-back_purple {
+  background-color: #7e5aff;
+  right: 0;
 }
 
 .section2-project__container {
@@ -871,22 +883,35 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 70px 0 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
 }
 
-.section2-project__container > :first-child {
+.section2-project__container > :not(:last-child) {
   margin-right: 70px;
 }
 
 .section2-project__img {
-  max-width: 630px;
+  -webkit-box-flex: 15;
+      -ms-flex: 15;
+          flex: 15;
   width: 100%;
+  max-width: 630px;
 }
 
 .section2-project__img img {
+  min-height: 430px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.section2-project__info {
+  -webkit-box-flex: 11;
+      -ms-flex: 11;
+          flex: 11;
 }
 
 .section2-project__suptitle {
@@ -910,7 +935,7 @@ body {
   line-height: 30px;
   color: #4b5562;
   font-weight: 400;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 30px;
 }
 
@@ -918,9 +943,31 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #2c4058;
-  font-family: "Gotham";
+  font-family: "Gotham", sans-serif;
   text-align: center;
   padding: 14px 42px;
   border: 1px solid #2c4058;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-bottom: 50px;
+}
+
+.section2-project__button:hover, .section2-project__button:focus {
+  background-color: #2c4058;
+  color: #fff;
+}
+
+.section2-project__address a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2c4058;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.section2-project__address a i {
+  padding-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
