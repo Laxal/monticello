@@ -1,17 +1,124 @@
 .section1 {
+    position: relative;
+
     &-slider {
+        min-width: 0;
+
+        &__item {
+            max-height: 800px;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+
+            .slide__title {
+                padding: 10px 0 0 0;
+                font-size: 80px;
+                letter-spacing: 5px;
+                line-height: 102px;
+                color: #ffffff;
+                font-family: "Gotham", sans-serif;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .slide__subtitle {
+                font-family: "Gotham", sans-serif;
+                font-weight: 900;
+                font-size: 18px;
+                letter-spacing: 4px;
+                line-height: 22px;
+                color: #ffffff;
+            }
+        }
+
         &__slide1 {
             background-image: url(/assets/img/section1-slide1.jpg);
         }
+        &__slide2 {
+            background-color: blue;
+        }
+        &__slide3 {
+            background-color: purple;
+        }
+        &__slide4 {
+            background-color: yellowgreen;
+        }
+        &__slide5 {
+            background-color: tomato;
+        }
 
-        .container {
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        }
+        .slick-dots {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5px;
 
-            max-height: 800px;
-            height: 100vh;
+            li {
+                font-size: 0;
+                margin: 0 0 40px 0;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                button {
+                    padding: 0;
+                    border: none;
+                    font: inherit;
+                    color: inherit;
+                    display: block;
+                    width: 9px;
+                    height: 9px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            li.slick-active {
+                button {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    &__swipe-button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid rgba($color: #fff, $alpha: 0.8);
+        border-radius: 50%;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+
+            width: 6px;
+            height: 6px;
+            border: 1px solid #fff;
+            border-top: none;
+            border-left: none;
         }
     }
 }
