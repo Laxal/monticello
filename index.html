@@ -238,8 +238,81 @@
 
                 </div> <!-- slider close-->
             </div> <!-- Container close -->
-
         </section>
+        <section class="section4" id="gallary">
+            <div class="container">
+                <h3 class="section-title section4__title">GALLARY</h3>
+                <div class="grid-container">
+                    <div class="big-image">
+                        <img src="/assets/img/section4-bigImg.jpg" alt="gallary-img">
+                    </div>
+                    <div class="small-img1">
+                        <img src="/assets/img/section4-small-img1.jpg" alt="gallary-img">
+                    </div>
+                    <div class="small-img2">
+                        <img src="/assets/img/section4-small-img2.jpg" alt="gallary-img">
+                    </div>
+                    <div class="small-img3">
+                        <img src="/assets/img/section4-small-img3.jpg" alt="gallary-img">
+                    </div>
+                    <div class="small-img4">
+                        <img src="/assets/img/section4-small-img4.jpg" alt="gallary-img">
+                    </div>
+                </div>
+                <button class="section4__button">SEE MORE</button>
+            </div>
+        </section>
+        <section class="section5" id="contacts">
+            <div id="map"></div>
+        </section>
+        <footer class="footer" id="contact">
+            <div class="container footer__container">
+                <form action="/" method="POST" class="footer__form form">
+                    <h3 class="section-title form__title">GET IN TOUCH</h3>
+                    <div class="inner-flex">
+                        <div class="form__contact-info">
+                            <ul>
+                                <li>
+                                    <a href="#address"><i class="fas fa-map-marker-alt"></i>91 Nolan Extensions Suite
+                                        670</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+0013568682454"><i class="fas fa-phone-alt"></i>+001 356-868-2454</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:gahuy93@gmail.com"><i class="fas fa-inbox"></i>gahuy93@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="https://calendar.google.com/calendar"><i class="far fa-clock"></i>From
+                                        07:05AM
+                                        to
+                                        19:30PM</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form__user-contact">
+                            <input type="text" name="name" placeholder="Your name" required maxlength="128">
+                            <input type="email" name="email" placeholder="Email" required maxlength="128">
+                            <button type="submit" class="form__button">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="inner-flex">
+                    <div class="footer__logo">
+                        <a href="/index.html"><img src="/assets/img/Logo.svg" alt="logo" /></a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="header__social-link fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="header__social-link tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="header__social-link inst"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <span>Copyrights &copy; 2017 Monticello Group</span>
+                    <span>Made with &#10084; by Ga Huy</span>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
@@ -249,6 +322,12 @@
         crossorigin="anonymous"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/sliders.js"></script>
+    <script src="/js/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCah0SIm3YnvBM0Vw233OUl6ai7EUye-jI&callback=initMap&libraries=&v=weekly"
+        async>
+        </script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

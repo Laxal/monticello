@@ -1,0 +1,187 @@
+.footer {
+    position: relative;
+    padding: 200px 0 210px;
+    background: url(/assets/img/footer-bg.jpg) center/cover no-repeat;
+
+    &__container {
+        max-width: 770px;
+        width: 100%;
+    }
+    .inner-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form {
+        max-width: 770px;
+        width: 100%;
+        background-color: #fff;
+        padding: 65px 60px 80px;
+        position: absolute;
+        top: -350px;
+
+        &__title {
+            margin-bottom: 55px;
+        }
+
+        &__contact-info {
+            li {
+                position: relative;
+                padding: 15px 30px;
+
+                &:hover {
+                    a {
+                        color: #49607c;
+                    }
+                }
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    color: #8b6aff;
+                }
+
+                a {
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #2a3747;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &__user-contact {
+            flex: 1;
+            padding-left: 25px;
+
+            display: flex;
+            flex-direction: column;
+            align-content: flex-end;
+
+            input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid rgba($color: #2c4058, $alpha: 0.5);
+                height: 50px;
+                margin-bottom: 20px;
+                color: #2c4058;
+                font-size: 18px;
+                &:hover,
+                &:focus {
+                    border-bottom: 1px solid rgba($color: #2c4058, $alpha: 1);
+                    outline: none;
+
+                    &::placeholder {
+                        color: rgba($color: #4b5562, $alpha: 0.5);
+                    }
+                }
+                &::placeholder {
+                    color: rgba($color: #4b5562, $alpha: 0.5);
+                    font-size: 18px;
+                }
+            }
+
+            button {
+                display: block;
+                margin-left: auto;
+                width: 140px;
+                height: 50px;
+                border: 1px solid #2c4058;
+                background-color: transparent;
+                text-transform: uppercase;
+                cursor: pointer;
+                color: #2c4058;
+                transition: all 0.3s ease-out;
+                &:hover,
+                &:focus {
+                    background-color: #2c4058;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 242px;
+        width: 100%;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+
+        &-link {
+            display: block;
+            color: #fff;
+            border: 1px solid rgba($color: #fff, $alpha: 0.5);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 0 0 20px;
+            transition: all 0.3s ease;
+        }
+
+        .fb {
+            &:hover,
+            &:active,
+            &:focus {
+                color: #4267b2;
+            }
+        }
+
+        .tw {
+            &:hover,
+            &:active,
+            &:focus {
+                color: #1da1f2;
+            }
+        }
+
+        .inst {
+            &:hover,
+            &:active,
+            &:focus {
+                color: #c13584;
+            }
+        }
+    }
+
+    &__copyright {
+        margin-top: 30px;
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #ffffff;
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+
+            &:first-child {
+                position: relative;
+                padding-right: 20px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

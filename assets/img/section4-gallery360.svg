@@ -1,0 +1,17 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70">
+	<title>360</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-width: 2.5 } 
+		.shp1 { opacity: 0.6;fill: none;stroke: #ffffff;stroke-width: 1.25 } 
+		.txt2 { font-size: 18px;fill: #ffffff;font-weight: bold;font-family: "Proxima Nova";text-anchor: middle } 
+	</style>
+	<g id="360">
+		<path id="Ellipse 1" class="shp0" d="M35 0C54.33 0 70 15.67 70 35C70 54.33 54.33 70 35 70C15.67 70 0 54.33 0 35C0 15.67 15.67 0 35 0Z" />
+		<path id="Ellipse 2" class="shp1" d="M35.58 3.5C44.92 3.5 52.5 17.6 52.5 35C52.5 52.4 44.92 66.5 35.58 66.5C26.23 66.5 18.66 52.4 18.66 35C18.66 17.6 26.23 3.5 35.58 3.5Z" />
+		<path id="Ellipse 2" class="shp1" d="M35 18.66C52.4 18.66 66.5 26.23 66.5 35.58C66.5 44.92 52.4 52.5 35 52.5C17.6 52.5 3.5 44.92 3.5 35.58C3.5 26.23 17.6 18.66 35 18.66Z" />
+		<text id="360˚" style="transform: matrix(1.167,0,0,1.167,34.956,42.936)" >
+			<tspan x="0" y="0" class="txt2">360˚</tspan>
+		</text>
+	</g>
+</svg>

@@ -40,7 +40,7 @@ body {
     position: relative;
     padding: 40px 0 0 0;
     font-size: 44px;
-    line-height: 50px;
+    line-height: 1;
     color: #2c4058;
     font-weight: 700;
     font-family: "Gotham", sans-serif;
@@ -58,4 +58,11 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+.marker-info {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.2em;
+    color: #2c4058;
 }
