@@ -2,6 +2,10 @@
     padding: 140px 0;
     background: url(/assets/img/section3-bg.jpg) center/cover no-repeat;
 
+    &__container {
+        max-width: 1300px;
+    }
+
     &-title {
         font-weight: 400;
         color: #fff;
@@ -13,16 +17,26 @@
     }
 
     &__slider {
+        position: relative;
         display: flex;
         justify-content: space-between;
+        padding: 0 100px;
 
         .card {
+            margin: 0 5px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             max-width: 370px;
             width: 100%;
+            height: auto;
             background-color: #fff;
 
             &__link {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
                 text-decoration: none;
             }
 
@@ -79,6 +93,10 @@
             }
 
             &__info {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                flex-grow: 1;
                 padding: 25px 50px 25px 20px;
             }
 
@@ -91,6 +109,7 @@
             }
 
             &__text {
+                flex: 1 1 auto;
                 font-size: 18px;
                 line-height: 30px;
                 color: #4b5562;
@@ -131,6 +150,99 @@
                     font-weight: 900;
                 }
             }
+        }
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+    .slick-track {
+        display: flex;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+
+        li {
+            font-size: 0;
+            margin: 0 10px;
+
+            button {
+                cursor: pointer;
+                padding: 0;
+                border: none;
+                font: inherit;
+                color: inherit;
+                display: block;
+                width: 9px;
+                height: 9px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+        }
+
+        li.slick-active {
+            button {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .slick-arrow {
+        font-size: 0;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+
+            width: 6px;
+            height: 6px;
+            border: 1px solid #fff;
+            border-top: none;
+            border-left: none;
+        }
+
+        &:hover {
+            background-color: #fff;
+
+            &::before {
+                border-color: #2eadeb;
+            }
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+
+        &::before {
+            left: 55%;
+            transform: translate(-50%, -50%) rotate(135deg);
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+        &::before {
+            left: 45%;
+            transform: translate(-50%, -50%) rotate(-45deg);
         }
     }
 }
